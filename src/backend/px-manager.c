@@ -41,6 +41,10 @@
 #include <plugins/config-kde/config-kde.h>
 #endif
 
+#ifdef HAVE_CONFIG_LEFTCLICK
+#include <plugins/config-leftclick/config-leftclick.h>
+#endif
+
 #ifdef HAVE_CONFIG_OSX
 #include <plugins/config-osx/config-osx.h>
 #endif
@@ -188,6 +192,9 @@ px_manager_constructed (GObject *object)
 #endif
 #ifdef HAVE_CONFIG_KDE
   px_manager_add_config_plugin (self, PX_CONFIG_TYPE_KDE);
+#endif
+#ifdef HAVE_CONFIG_LEFTCLICK
+  px_manager_add_config_plugin (self, PX_CONFIG_TYPE_LEFTCLICK);
 #endif
 #ifdef HAVE_CONFIG_OSX
   px_manager_add_config_plugin (self, PX_CONFIG_TYPE_OSX);

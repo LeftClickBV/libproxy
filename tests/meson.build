@@ -77,6 +77,18 @@ if get_option('tests')
     )
   endif
 
+  if get_option('config-leftclick')
+    config_leftclick_test = executable('test-config-leftclick',
+      ['config-leftclick-test.c', 'px-manager-helper.c'],
+      include_directories: px_backend_inc,
+      dependencies: [glib_dep, px_backend_dep],
+    )
+    test('Config LeftClick test',
+         config_leftclick_test,
+         env: envs
+    )
+  endif
+
   if get_option('config-osx') and with_platform_darwin
     config_osx_test = executable('test-config-osx',
       ['config-osx-test.c', 'px-manager-helper.c'],

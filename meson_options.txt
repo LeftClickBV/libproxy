@@ -55,6 +55,13 @@ option(
 )
 
 option(
+  'config-leftclick',
+  type: 'boolean',
+  value: true,
+  description: 'Whether to build support for LeftClick configuration'
+)
+
+option(
   'config-xdp',
   type: 'boolean',
   value: true,

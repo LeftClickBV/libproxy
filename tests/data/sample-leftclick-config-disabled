@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <player_environment>production</player_environment>
+  <player_proxy>OFF</player_proxy>
+  <player_proxy_auth>DEFAULT</player_proxy_auth>
+</root>

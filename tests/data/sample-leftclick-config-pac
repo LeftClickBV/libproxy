@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <player_environment>development</player_environment>
+  <player_proxy>ON</player_proxy>
+  <player_proxy_server>pac+http://127.0.0.1/px-manager-sample.pac</player_proxy_server>
+  <player_proxy_blacklist>*.leftclick.cloud,*.leftclick.eu</player_proxy_blacklist>
+  <player_proxy_auth>DEFAULT</player_proxy_auth>
+  <player_proxy_username>foo</player_proxy_username>
+  <player_proxy_password>bar</player_proxy_password>
+</root>
